@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11521.1" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xyV-Bv-mIA">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="w7S-H6-otU">
+            <objects>
+                <viewController id="xyV-Bv-mIA" customClass="ViewController" customModule="HealthKitHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b05-99-Ige"/>
+                        <viewControllerLayoutGuide type="bottom" id="LP4-Kn-NlP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jxl-DL-GIB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyT-Z7-r6y">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="218" id="YmS-cT-SE8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Export"/>
+                                <connections>
+                                    <action selector="export:" destination="xyV-Bv-mIA" eventType="touchUpInside" id="lap-5V-IrX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="xyT-Z7-r6y" secondAttribute="trailing" constant="37" id="ZMg-Kp-Kjz"/>
+                            <constraint firstItem="xyT-Z7-r6y" firstAttribute="top" secondItem="b05-99-Ige" secondAttribute="bottom" constant="55" id="j50-RG-CwI"/>
+                            <constraint firstItem="xyT-Z7-r6y" firstAttribute="leading" secondItem="Jxl-DL-GIB" secondAttribute="leadingMargin" constant="36" id="wZC-QE-azv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2mB-Ls-d6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-199" y="0.0"/>
+        </scene>
+    </scenes>
+</document>
